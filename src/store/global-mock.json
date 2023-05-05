@@ -1,0 +1,89 @@
+{
+	"name": "全局store接口数据",
+	"loginInfo": {
+		"success": {
+			"code": "0",
+			"success": true,
+			"content": {
+				"userId": 1,
+				"avatar": null,
+				"securityLevel": 5,
+				"mobile": "15111111111",
+				"name": null,
+				"nickname": "cf",
+				"gender": 1,
+				"createUserId": null,
+				"modifyUserId": 1,
+				"roleCode": "master",
+				"status": 1,
+				"ctime": "2021-02-25 11:52:14",
+				"mtime": "2022-08-05 11:56:34",
+				"roleName": "超级管理员",
+				"permissionMap": {
+					"role": 15,
+					"user": 15,
+					"config": 15,
+					"project": 15
+				}
+			}
+		},
+		"failed": {
+			"code": "NEED_LOGIN",
+			"success": false,
+			"content": null,
+			"message": "用户未登录"
+		},
+		"request": {
+			"url": "/api/v1/fq/login_info",
+			"method": "GET",
+			"reqBody": "",
+			"name": "获取登陆信息",
+			"description": "",
+			"path": "login_info",
+			"resContentType": "application/json; charset=utf-8"
+		}
+	},
+	"logout": {
+		"success": {
+			"code": "0",
+			"success": true,
+			"content": {
+				"isLogout": true
+			}
+		},
+		"request": {
+			"url": "/api/v1/fq/logout",
+			"method": "POST",
+			"reqBody": "",
+			"name": "退出登录",
+			"description": "",
+			"path": "logout",
+			"resContentType": "application/json; charset=utf-8"
+		}
+	},
+	"getCondition": {
+		"success": {
+			"code": "0",
+			"success": true,
+			"content": {
+				"menu": [
+					{
+						"url": "https://127.0.0.1/zpd4mw",
+						"name": "POC流程规范",
+						"isMenu": true,
+						"isHeader": true
+					}
+				]
+			}
+		},
+		"request": {
+			"url": "/api/v1/fq/base/configs?names=menu",
+			"method": "GET",
+			"reqBody": "",
+			"name": "获取配置",
+			"description": "",
+			"path": "base/configs",
+			"resContentType": "application/json; charset=utf-8"
+		}
+	}
+}

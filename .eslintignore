@@ -1,0 +1,16 @@
+.idea
+/node_modules
+/public
+.DS_store
+*.log
+Untitled
+.vscode
+dist
+.nyc_output
+test.js
+package-lock.json
+config/config.js
+config/conf.json
+mock.json
+coverage
+api-cache

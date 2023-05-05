@@ -1,0 +1,53 @@
+{
+	"name": "登陆",
+	"login": {
+		"failed": {
+			"code": "ERROR_PASSWORD",
+			"success": false,
+			"content": null,
+			"message": "密码不正确"
+		},
+		"success": {
+			"code": "0",
+			"success": true,
+			"content": {
+				"userId": 1,
+				"email": "",
+				"avatar": null,
+				"securityLevel": 5,
+				"mobile": "13000000000",
+				"name": null,
+				"nickname": "昵称",
+				"cuserId": null,
+				"roleCode": "master",
+				"ctime": "2021-02-25 11:52:14",
+				"mtime": "2021-08-24 16:41:45",
+				"roleName": "超级管理员",
+				"permissions": {
+					"fast": 15,
+					"user": 15,
+					"project": 15
+				}
+			}
+		},
+		"false": {
+			"success": false,
+			"code": "ERROR_PASS_ERROR",
+			"content": null,
+			"message": "账号或密码错误!"
+		},
+		"request": {
+			"url": "/api/login",
+			"method": "POST",
+			"reqBody": {
+				"mobile": "13333333333",
+				"password": "96e79218965eb72c92a549dd5a330112"
+			},
+			"name": "登陆接口",
+			"description": "通过手机号和密码登陆",
+			"path": "login",
+			"reqContentType": "application/json",
+			"resContentType": "application/json; charset=utf-8"
+		}
+	}
+}

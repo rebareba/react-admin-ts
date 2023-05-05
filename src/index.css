@@ -1,0 +1,5 @@
+/* @tailwind base; 注释这个 手动引入tailwindcss的基础覆盖样式preflight.css 里面关于按钮的背景和antd的冲突处理注释了*/
+/* @tailwind base; */
+@import  './preflight.css'
+@tailwind components;
+@tailwind utilities;
